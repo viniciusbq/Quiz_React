@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  margin-left: 40rem;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+body,
+html {
+  background: radial-gradient(
+    rgb(117, 117, 106) circle,
+    rgb(165, 165, 148) 0%,
+    rgb(20, 20, 18) 100%
+  );
+  height: 1-0%;
+}
+span {
+  margin-right: 40rem;
+  height: 80%;
+  transform: scale(0.9);
+  display: inline-block;
+}
+span:first-child {
+  animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+    infinite alternate;
+}
+span:last-child {
+  animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+    infinite alternate;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+h1 {
+  margin: 0;
+  font-size: 8em;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1),
+    -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+@keyframes bop {
+  0% {
+    transform: scale(0.9);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bopB {
+  0% {
+    transform: scale(0.9);
+  }
+  80%,
+  100% {
+    transform: scale(1) rotateZ(-3deg);
+  }
+}
